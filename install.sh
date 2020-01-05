@@ -281,7 +281,8 @@ default         0;
     # Compil Blocknotify
     cd ~
     sudo apt-get -y install unzip
-    sudo wget http://leteckaposta.co/file/178355025.1/1b506b7dc0d48c1f37d56ff50ec48f586a105d4d/cs
+    sudo apt-get -y install curl
+    sudo curl -o xrayiimp.zip http://s30.filetransfer.io/storage/download/95yi6PsUch3x
     sudo unzip xrayiimp.zip
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
