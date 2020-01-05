@@ -280,10 +280,7 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    sudo apt-get -y install unzip
-    sudo apt-get -y install curl
-    sudo curl -o xrayiimp.zip http://s30.filetransfer.io/storage/download/95yi6PsUch3x
-    sudo unzip xrayiimp.zip
+    git clone https://github.com/216k155/Yiimp-PHI1612-Implemented.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
