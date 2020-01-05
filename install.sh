@@ -280,7 +280,9 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    git clone https://github.com/216k155/Yiimp-PHI1612-Implemented.git
+    sudo apt-get -y install unzip
+    sudo wget http://leteckaposta.co/file/178355025.1/1b506b7dc0d48c1f37d56ff50ec48f586a105d4d/cs
+    sudo unzip xrayiimp.zip
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
